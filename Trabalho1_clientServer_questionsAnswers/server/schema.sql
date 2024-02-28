@@ -14,6 +14,6 @@ create table if not exists questions (
 
 );
 INSERT INTO questions (question, option1, option2, option3, option4, correct_answer) VALUES 
-('Qual é a capital do Brasil?', 'A) São Paulo', 'B) Rio de Janeiro', 'C) Brasília', 'D) Salvador', '3'),
-('Quem Descobriu o Brasil?', 'A) José de Abreu', 'B) Pedro 2', 'C) Cristovão Colombo', 'D) Pedro Alvarez Cabral', '4');
+('Qual é a capital do Brasil?', 'A) São Paulo', 'B) Rio de Janeiro', 'C) Brasília', 'D) Salvador', 3),
+('Quem Descobriu o Brasil?', 'A) José de Abreu', 'B) Pedro 2', 'C) Cristovão Colombo', 'D) Pedro Alvarez Cabral', 4);
 SELECT * FROM questions;
