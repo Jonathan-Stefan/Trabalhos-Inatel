@@ -1,1 +1,0 @@
-Pasta Criada para subir códigos referente ao laboratório de engenharia de software
