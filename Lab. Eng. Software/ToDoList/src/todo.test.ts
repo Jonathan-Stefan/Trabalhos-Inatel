@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ToDoList } from './TodoList'
 
 const anyTask = {
@@ -29,4 +29,4 @@ describe('ToDoList', () => {
       expect(tasks).toEqual([])
     })
   })
-})*/
+})
