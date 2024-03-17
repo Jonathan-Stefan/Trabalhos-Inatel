@@ -1,18 +1,30 @@
 {
   "name": "todolist",
   "version": "1.0.0",
-  "description": "Adicionando o README",
+  "description": "Aula introdutoria sobre git",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/index.ts",
+    "start:prod": "npm run build && node dist/index.js",
+    "build": "tsc",
+    "prepare": "husky",
+    "test:unit": "jest",
+    "test:unit:report": "jest --collect-coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@types/node": "^20.11.28",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
     "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.4.2"
+    "typescript": "^5.3.3"
   }
 }
