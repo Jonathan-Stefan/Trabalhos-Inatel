@@ -34,7 +34,7 @@ public class ProfessorConst {
                 "\"periodo\": \"integral\", \n " +
                 "\"sala\": 26, \n " +
                 "\"predio\": [6] }";
-        public static String Guaracy = "{ \"nome\": \"Guaracy\", \n " +
+        public static String Rodrigo = "{ \"nome\": \"Rodrigo\", \n " +
                 "\"horarioDeAtendimento\": \"08:00 - 09:00\", \n " +
                 "\"periodo\": \"integral\", \n " +
                 "\"sala\": 5, \n " +
@@ -45,7 +45,7 @@ public class ProfessorConst {
                 "\"sala\": 7, \n " +
                 "\"predio\": [2] }";
         public static String Bruno = "{ \"nome\": \"Bruno\", \n " +
-                "\"horarioDeAtendimento\": \"15:00 - 14:00\", \n " +
+                "\"horarioDeAtendimento\": \"13:00 - 14:00\", \n " +
                 "\"periodo\": \"integral\", \n " +
                 "\"sala\": 13, \n " +
                 "\"predio\": [3] }";
