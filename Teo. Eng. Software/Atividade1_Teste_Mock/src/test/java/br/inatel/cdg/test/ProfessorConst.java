@@ -34,6 +34,21 @@ public class ProfessorConst {
                 "\"periodo\": \"integral\", \n " +
                 "\"sala\": 26, \n " +
                 "\"predio\": [6] }";
+        public static String Guaracy = "{ \"nome\": \"Guaracy\", \n " +
+                "\"horarioDeAtendimento\": \"08:00 - 09:00\", \n " +
+                "\"periodo\": \"integral\", \n " +
+                "\"sala\": 5, \n " +
+                "\"predio\": [1] }";
+        public static String Renan = "{ \"nome\": \"Renan\", \n " +
+                "\"horarioDeAtendimento\": \"10:00 - 11:00\", \n " +
+                "\"periodo\": \"integral\", \n " +
+                "\"sala\": 7, \n " +
+                "\"predio\": [2] }";
+        public static String Bruno = "{ \"nome\": \"Bruno\", \n " +
+                "\"horarioDeAtendimento\": \"15:00 - 14:00\", \n " +
+                "\"periodo\": \"integral\", \n " +
+                "\"sala\": 13, \n " +
+                "\"predio\": [3] }";
         public static String Invalida = "{ \"nome\": \"Entrada invalida\", \n " +
                 "\"horarioDeAtendimento\": \"-\", \n " +
                 "\"periodo\": \"-\", \n " +
