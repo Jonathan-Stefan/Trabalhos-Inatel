@@ -1,19 +1,19 @@
 export type Task = {
-  title: string,
-  description: string,
-  targetDate: string,
-  type?: string,
-  priority?: string,
-  subTasks?: Task []
+    title: string,
+    description: string,
+    targetDate: string,
+    type?: string,
+    priority?: string,
+    subTasks?: Task []
 }
 
 export type UpdateTask = {
-title?: string,
-description?: string,
-targetDate?: string,
-type?: string,
-priority?: string,
-subTasks?: Task []
+  title?: string,
+  description?: string,
+  targetDate?: string,
+  type?: string,
+  priority?: string,
+  subTasks?: Task []
 }
 
 export class ToDoList {
@@ -38,6 +38,9 @@ export class ToDoList {
   }
 
   updateTask (index: number, task: UpdateTask) {
+    if (!this.tasks[index]) {
+      return
+    }
     this.tasks[index] = {
       ...this.tasks[index],
       ...task
@@ -47,4 +50,5 @@ export class ToDoList {
   removeTask (index: number) {
     this.tasks.splice(index, 1)
   }
+// eslint-disable-next-line eol-last
 }
