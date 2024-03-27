@@ -28,6 +28,12 @@ public class MockProfessorService implements ProfessorService{
             return ProfessorConst.Renan;
         }else if ( nome == "Bruno") {
             return ProfessorConst.Bruno;
+        }else if ( nome == "Karina") {
+            return ProfessorConst.Karina;
+        }else if ( nome == "FalhaPredioKarina") {
+            return ProfessorConst.FalhaPredioKarina;
+        }else if ( nome == "FalhaHorarioSoned") {
+            return ProfessorConst.FalhaHorarioSoned;
         }else return ProfessorConst.Invalida;
     }
 

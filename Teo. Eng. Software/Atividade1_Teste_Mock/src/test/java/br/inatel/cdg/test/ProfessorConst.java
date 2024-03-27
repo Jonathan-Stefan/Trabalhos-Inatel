@@ -19,6 +19,7 @@ public class ProfessorConst {
                 "\"sala\": 18, \n " +
                 "\"predio\": [4] }";
 
+
         public static String Marcelo = "{ \"nome\": \"Marcelo\", \n " +
                 "\"horarioDeAtendimento\": \"17:30 - 19:00\", \n " +
                 "\"periodo\": \"noturno\", \n " +
@@ -49,9 +50,25 @@ public class ProfessorConst {
                 "\"periodo\": \"integral\", \n " +
                 "\"sala\": 13, \n " +
                 "\"predio\": [3] }";
+        public static String Karina = "{ \"nome\": \"Karina\", \n " +
+                "\"horarioDeAtendimento\": \"13:00 - 14:00\", \n " +
+                "\"periodo\": \"Noturno\", \n " +
+                "\"sala\": 3, \n " +
+                "\"predio\": [1] }";
         public static String Invalida = "{ \"nome\": \"Entrada invalida\", \n " +
                 "\"horarioDeAtendimento\": \"-\", \n " +
                 "\"periodo\": \"-\", \n " +
                 "\"sala\": -, \n " +
                 "\"predio\": [-] }";
+        public static String FalhaPredioKarina = "{ \"nome\": \"Karina\", \n " +
+                "\"horarioDeAtendimento\": \"13:00 - 14:00\", \n " +
+                "\"periodo\": \"Noturno\", \n " +
+                "\"sala\": 3, \n " +
+                "\"predio\": [4] }";
+        public static String FalhaHorarioSoned = "{ \"nome\": \"Soned\", \n " +
+               "\"horarioDeAtendimento\": \"09:00 - 11:00\", \n " +
+               "\"periodo\": \"integral\", \n " +
+               "\"sala\": 4, \n " +
+               "\"predio\": [1] }";
 }
+
