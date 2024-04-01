@@ -1,13 +1,12 @@
-// src/Calculator.test.ts
 import Calculator from "./Calculator";
-import { Operation } from "./interfaces/Operation";
+import MockOperation from "./mocks/MockOperation";
 
 describe("Calculator Tests", () => {
     let calculator: Calculator;
 
     beforeEach(() => {
-        // Passando um objeto vazio como argumento para a instância de Calculator
-        calculator = new Calculator({} as Operation);
+        // Criando uma instância da Calculator com a classe mock MockOperation
+        calculator = new Calculator(new MockOperation());
     })
 
     test("Addition test", () => {
