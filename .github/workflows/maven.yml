@@ -31,7 +31,7 @@ jobs:
       run: |
           cd Teo.\ Eng.\ Software
           cd Aula9_GitHubAction
-          sh scripts/ShellTest.sh
+          sh Scripts/ShellTest.sh
 
   build:
 
@@ -50,6 +50,6 @@ jobs:
         run: |
             cd Teo.\ Eng.\ Software
             cd Aula9_GitHubAction
-            sh scripts/ShellBuild.sh
+            sh Scripts/ShellBuild.sh
 
            
