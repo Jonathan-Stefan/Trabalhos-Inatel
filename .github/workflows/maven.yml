@@ -28,7 +28,10 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Test with Maven
-      run: sh scripts/ShellTest.sh
+      run: |
+          cd Teo.Eng.Software
+          cd Aula9_GitHubAction
+          sh scripts/ShellTest.sh
 
   build:
 
@@ -44,6 +47,9 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build with Maven
-        run: sh scripts/ShellBuild.sh
+        run: |
+            cd Teo.Eng.Software
+            cd Aula9_GitHubAction
+            sh scripts/ShellBuild.sh
 
            
