@@ -50,5 +50,4 @@ export class ToDoList {
   removeTask (index: number) {
     this.tasks.splice(index, 1)
   }
-// eslint-disable-next-line eol-last
 }
