@@ -23,7 +23,7 @@ jobs:
             - name: Run unit tests
               run: | 
                   cd Lab-Eng-Software
-                  cd ToDoList                     
+                                      
                   npm run test:unit
 
     build:

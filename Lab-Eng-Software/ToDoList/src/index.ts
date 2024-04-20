@@ -15,7 +15,7 @@ async function getUserInput (prompt: string): Promise<any> {
   return await userInput(prompt)
 }
 
-//const todoListRepository = new ToDoListAdapter()
+const todoListRepository = new ToDoListAdapter()
 const toDoList = new ToDoList(todoListRepository)
 
 async function addNewTask () {
