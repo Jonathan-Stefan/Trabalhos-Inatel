@@ -18,12 +18,15 @@ jobs:
                 node-version: '20.11.1'
 
             - name: Install dependencies
-              run: npm i
+              run: |
+                  cd Lab-Eng-Software
+                  cd ToDoList                    
+                  npm i
 
             - name: Run unit tests
               run: | 
                   cd Lab-Eng-Software
-                                      
+                  cd ToDoList                    
                   npm run test:unit
 
     build:
@@ -38,10 +41,13 @@ jobs:
               node-version: '20.11.1'
 
           - name: Install dependencies
-            run: npm i
-
+            run: |
+                cd Lab-Eng-Software
+                cd ToDoList                    
+                npm i
+                
           - name: Run build
             run: |
                 cd Lab-Eng-Software
-                cd ToDoList                     
+                cd ToDoList                   
                 npm run build         
