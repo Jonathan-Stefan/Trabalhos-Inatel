@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": " ",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node src/Calculator.ts",
     "start:prod": "npm run build && node dist/index.js",
     "build": "tsc",
     "test:unit": "jest",
