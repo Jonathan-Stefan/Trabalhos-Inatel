@@ -4,6 +4,8 @@
   "description": " ",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "start:prod": "npm run build && node dist/index.js",
+    "build": "tsc",
     "test:unit": "jest",
     "test:unit:report": "jest --collect-coverage"
   },
