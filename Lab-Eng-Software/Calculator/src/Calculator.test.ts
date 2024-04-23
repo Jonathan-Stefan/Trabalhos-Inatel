@@ -7,7 +7,7 @@ describe("Calculator Tests", () => {
     beforeEach(() => {
         // Criando uma instância da Calculator com a classe mock MockOperation
         calculator = new Calculator(new MockOperation());
-    })
+    });
 
     test("Addition test", () => {
         const result = calculator.somar(2, 3);
