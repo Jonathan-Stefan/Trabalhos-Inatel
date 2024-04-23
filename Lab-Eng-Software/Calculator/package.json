@@ -5,7 +5,8 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "test:unit": "jest",
-    "test:unit:report": "jest --collect-coverage"
+    "test:unit:report": "jest --collect-coverage",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",
