@@ -20,3 +20,10 @@ npm install
 Para executar os testes unitários, você pode usar o seguinte comando:
 
 npm run test:unit
+
+## CICD
+
+para verificar o codigo de CICD navegue até a raíz do repositório, esta com o nome de cicd_calc.yml
+
+cd..
+cd..
