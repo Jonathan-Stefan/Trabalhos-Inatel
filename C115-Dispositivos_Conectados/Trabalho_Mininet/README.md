@@ -7,5 +7,8 @@ sudo mn -c
 ### Comando para executar arquivo python
 sudo python mnbasic.py
 
+## Criando a topologia via mininet
+sudo mn --custom topo_5switches_6hosts.py --topo mytopo
+
 ## Comando para fechar o putty
 exit
