@@ -1,11 +1,76 @@
+# Projeto Arduino com Sensor DHT11 e MQTT
+
+Este projeto demonstra como ler dados de um sensor DHT11 (umidade e temperatura) usando um Arduino e enviar esses dados para um broker MQTT para visualização no aplicativo MyMQTT.
+
+## Componentes Necessários
+
+- Arduino (UNO, Mega, etc.)
+- Sensor DHT11
+- WiFi Shield ou módulo WiFi compatível com Arduino (por exemplo, ESP8266)
+- Resistor de 10kΩ (se necessário)
+- Jumpers e Protoboard
+
+## Bibliotecas Utilizadas
+
+- `WiFi101`: Para conexão WiFi.
+- `DHT`: Para leitura do sensor DHT11.
+- `PubSubClient`: Para comunicação MQTT.
+
+## Conexões do Sensor DHT11
+
+### DHT11 com 4 Pinos:
+
+1. **VCC (ou +5V)**: Alimentação do sensor.
+2. **Data**: Pino de saída de dados.
+3. **NC**: Não conectado (sem uso).
+4. **GND (ou Ground)**: Terra.
+
+### DHT11 com 3 Pinos (módulo):
+
+1. **VCC**: Alimentação do sensor.
+2. **Data**: Pino de saída de dados.
+3. **GND**: Terra.
+
+### Conexões para o Arduino:
+
+#### Para o DHT11 com 4 Pinos:
+
+- **VCC (ou +5V)** do DHT11 -> **5V** no Arduino
+- **Data** do DHT11 -> **Pino Digital 2** no Arduino
+- **NC** do DHT11 -> Não conectado
+- **GND** do DHT11 -> **GND** no Arduino
+
+#### Para o DHT11 com 3 Pinos (módulo):
+
+- **VCC** do DHT11 -> **5V** no Arduino
+- **Data** do DHT11 -> **Pino Digital 2** no Arduino
+- **GND** do DHT11 -> **GND** no Arduino
+
+### Diagrama de Conexão com Pull-Up Resistor:
+
+- Resistor de 10kΩ entre **Data** e **VCC**.
+
+## Configuração do MQTT Dash
+
+1. **Baixe e instale** o aplicativo MyMQTT.
+2. **Adicione um novo broker**:
+   - **Host**: `broker.hivemq.com`
+   - **Port**: `1883`
+3. **Adicione widgets** para os tópicos:
+   - `home/temperature/humidity`
+   - `home/temperature/temperature`
+
+## Código Arduino
+
+```cpp
 #include <WiFi101.h>
 #include <SPI.h>
 #include <DHT.h>
 #include <PubSubClient.h>
 
 // Configurações da rede WiFi
-const char* ssid = "******";
-const char* password = "*********";
+const char* ssid = "*******";
+const char* password = "*******";
 
 int status = WL_IDLE_STATUS; // Status da conexão
 
@@ -129,3 +194,8 @@ void printWifiStatus() {
   Serial.print(rssi);
   Serial.println(" dBm");
 }
+```
+
+## Autores
+
+[Jonathan Stefan Covelo de Carvalho e Gabriel Augusto Teodoro Vilas Boas ]
